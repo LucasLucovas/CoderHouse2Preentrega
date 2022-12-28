@@ -140,3 +140,10 @@ body{
         display: none;
     }
 }
+
+@media screen and (max-width: 400px){
+    .main__textcontainer{
+        width: 380px;
+        height: 600px;
+    }
+}
