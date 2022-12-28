@@ -1,7 +1,6 @@
-/* CSS (con modificadores de texto, colores, listas y box modeling). */
-
-/* General styles for all pages */
-
+html{
+    height: 100vh;
+}
 
 *{
     margin: 0;
@@ -9,6 +8,10 @@
     box-sizing: 0;
     font-family: 'Roboto',sans-serif;
     font-weight: 400;
+}
+
+body{
+    height: 100%;
 }
 
 
@@ -24,11 +27,9 @@
 /* Index.html */
 
 .main{
-    display: flex;
     background-image: url(../img/pexels-street-donkey-3705687.jpg);
     background-size: cover;
-    justify-content: space-around;
-    align-items: center;
+    height: 100%;
 }
 
 .main__textcontainer{
@@ -41,29 +42,26 @@
     -webkit-box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
     -moz-box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
     box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
-    animation: textAnimation 5s;
-    animation-delay: 2s;
 }
 
 .main__title{
     text-align: left;
-    margin-top: 3rem;
-    margin-left: 2rem;
-    font-size: 5rem;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 50px;
 }
 
 .main__text{
     text-align: left;
-    margin-top: 3rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 2.3rem;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 23px;
 }
 .main__imagecontainer{
     height: 600px;
-    width: 700px;
+    width: 700px !important; 
     position: relative;
-    /* background-color: rgba(180, 147, 103, 0.842); */
     background-color: rgba(217, 189, 173, 0.767);
     -webkit-box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
     -moz-box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
@@ -136,8 +134,9 @@
     100%{ left: 465px;}
 }
 
-@keyframes textAnimation {
-    0%{ color: rgba(255, 255, 255, 0);}
-    100%{ color: rgba(255, 255, 255, 1);}
-}
 
+@media screen and (max-width: 900px){
+    .main__imagecontainer{
+        display: none;
+    }
+}
