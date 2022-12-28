@@ -1,0 +1,143 @@
+/* CSS (con modificadores de texto, colores, listas y box modeling). */
+
+/* General styles for all pages */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+}
+
+
+/* 
+#1C1F26
+#8A99A6
+#D9BDAD
+#594242
+#F2F2F2
+*/
+
+
+/* Index.html */
+
+.main{
+    display: flex;
+    background-image: url(../img/pexels-street-donkey-3705687.jpg);
+    background-size: cover;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__textcontainer{
+    color: #ffffff;
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+    width: 500px;
+    height: 500px;
+    margin: 20px 40px;
+    -webkit-box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
+    -moz-box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
+    box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
+    animation: textAnimation 5s;
+    animation-delay: 2s;
+}
+
+.main__title{
+    text-align: left;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-size: 5rem;
+}
+
+.main__text{
+    text-align: left;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2.3rem;
+}
+.main__imagecontainer{
+    height: 600px;
+    width: 700px;
+    position: relative;
+    /* background-color: rgba(180, 147, 103, 0.842); */
+    background-color: rgba(217, 189, 173, 0.767);
+    -webkit-box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
+    -moz-box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
+    box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
+}
+
+.main__imagecontainer img{
+    border: solid 1px rgb(244, 244, 244);
+}
+
+
+
+.main__imagecontainer img:nth-child(1){
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: imageAnimationbr 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+.main__imagecontainer img:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 330px;
+    animation: imageAnimationtr 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.main__imagecontainer img:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 350px;
+    animation: imageAnimationbl 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.main__imagecontainer img:nth-child(4){
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: imageAnimationtl 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes imageAnimationbr{
+    0% { bottom: 0px;}
+    100%{ bottom: 400px;}
+}
+
+@keyframes imageAnimationtr {
+    0% { right: 0px;}
+    100%{ right: 435px;}
+}
+@keyframes imageAnimationtl {
+    0% { top: 0px;}
+    100%{ top: 400px;}
+}
+@keyframes imageAnimationbl {
+    0% { left: 0px;}
+    100%{ left: 465px;}
+}
+
+@keyframes textAnimation {
+    0%{ color: rgba(255, 255, 255, 0);}
+    100%{ color: rgba(255, 255, 255, 1);}
+}
+
