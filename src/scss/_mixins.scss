@@ -1,36 +1,4 @@
 // extends
-// tambien se puede crear clases base para ya tener estilos listos
-// y extender esas clases para ahorrar codigo
-.btn-more{
-    width: 100px;
-    height: 30px;
-    background: linear-gradient(to top,violet,deeppink);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    color: black;
-    &:hover{
-        background: linear-gradient(to bottom,violet,deeppink);
-    }
-}
-
-.btn-rounded{
-    @extend .btn-more; 
-    //extiende la clase de btn-more para darle los estilos que ya tiene para no repetirse
-    border-radius: 4px;
-}
-
-.box-gral{
-    width: 100%;
-    padding: 20px 10px;
-    margin: auto;
-}
-
-.box-gral-gray{
-    @extend .box-gral;
-    background-color: gray;
-}
 
 .normalize{
     margin: 0;
@@ -40,22 +8,26 @@
     font-weight: 400;
 }
 
-// mixins (parecidos a las funciones)
-// son para automatizar codigo
-
-
-
-@mixin textos($size,$line-height,$color){
-    font-size: $size;
-    line-height: $line-height;
-    color: $color;
-    padding: 10px;
-    text-align: left;
-    @if $align == right {text-align: right;}
-    @if $align == left {text-align: left;}
-    @if $align == center {text-align: center;}
+.animations{
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
+// mixins
+
+@mixin text($size,$color){
+    font-size: $size;
+    color: $color;
+    text-align: left;
+}
+
+@mixin margin($top,$left,$right,$bottom){
+    margin-top: $top;
+    margin-left: $left;
+    margin-right: $right;
+    margin-bottom: $bottom;
+}
 
 
 @mixin flex($direction,$justify,$align,$wrap){
@@ -65,39 +37,6 @@
     align-items: $align;
     flex-wrap: $wrap;
 }
-
-@mixin directionRow(){//mixin que no lleva parametros
-    flex-direction: row;
-}
-
-
-
-
-// p{
-//     @include textos(1.1em,1.4em,black)
-// }
-
-.box{
-    @include flex(row, center, center, nowrap);
-}
-
-.box2{
-    @include flex(column, flex-end, flex-start, wrap);
-}
-
-
-
-// maps (son como arrays)
-
-
-$paleta:(
-    'uno': #1C1F26,
-    'dos':#8A99A6,
-    'tres':#D9BDAD,
-    'cuatro': #594242,
-    'cinco': #F2F2F2,
-);
-
 
 
 //condicionales

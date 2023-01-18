@@ -2,18 +2,20 @@
 @import "_vars";
 
 
+html{
+    height: 100vh;
+}
 
 *{
     @extend .normalize;
 }
 
-/* 
-#1C1F26
-#8A99A6
-#D9BDAD
-#594242
-#F2F2F2
-*/
+body{
+    height: 100%;
+}
+
+
+
 
 
 /* Index.html */
@@ -25,39 +27,34 @@
 }
 
 .main__textcontainer{
-    color: #ffffff;
     border: 5px solid rgba(255, 255, 255, 0.9);
     border-radius: 3px;
     width: 500px;
     height: 500px;
     margin: 20px 40px;
-    -webkit-box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
-    -moz-box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
-    box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
+    -webkit-box-shadow: $homeShadow;
+    -moz-box-shadow: $homeShadow;
+    box-shadow: $homeShadow;
 }
 
 .main__title{
-    text-align: left;
-    margin-top: 30px;
-    margin-left: 20px;
-    font-size: 50px;
+    @include text(50px,#ffffff);
+    @include margin(30px,20px,null,null);
 }
 
 .main__text{
-    text-align: left;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 23px;
+    @include text(23px,#ffffff);
+    @include margin(30px,20px,20px,null)
 }
+
 .main__imagecontainer{
     height: 600px;
     width: 700px !important; 
     position: relative;
     background-color: rgba(217, 189, 173, 0.767);
-    -webkit-box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
-    -moz-box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
-    box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
+    -webkit-box-shadow: $homeShadow;
+    -moz-box-shadow: $homeShadow;
+    box-shadow: $homeShadow;
 }
 
 .main__imagecontainer img{
@@ -66,47 +63,43 @@
 
 
 
-.main__imagecontainer img:nth-child(1){
-    width: 300px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    animation: imageAnimationbr 10s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+.main__imagecontainer img{
+    &:nth-child(1){
+        width: 300px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        animation: imageAnimationbr 10s;
+        @extend .animations;
+    }
+    &:nth-child(2){
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 330px;
+        animation: imageAnimationtr 10s;
+        @extend .animations;
+    }
+    &:nth-child(3){
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 350px;
+        animation: imageAnimationbl 10s;
+        @extend .animations;
+    }
+    &:nth-child(4){
+        width: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: imageAnimationtl 10s;
+        @extend .animations;
+    }
 
 }
-.main__imagecontainer img:nth-child(2){
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 330px;
-    animation: imageAnimationtr 10s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-.main__imagecontainer img:nth-child(3){
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 350px;
-    animation: imageAnimationbl 10s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-.main__imagecontainer img:nth-child(4){
-    width: 300px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: imageAnimationtl 10s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
+
+
 
 @keyframes imageAnimationbr{
     0% { bottom: 0px;}
