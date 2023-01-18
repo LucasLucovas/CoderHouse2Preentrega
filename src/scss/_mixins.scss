@@ -1,0 +1,137 @@
+// extends
+// tambien se puede crear clases base para ya tener estilos listos
+// y extender esas clases para ahorrar codigo
+.btn-more{
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to top,violet,deeppink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: black;
+    &:hover{
+        background: linear-gradient(to bottom,violet,deeppink);
+    }
+}
+
+.btn-rounded{
+    @extend .btn-more; 
+    //extiende la clase de btn-more para darle los estilos que ya tiene para no repetirse
+    border-radius: 4px;
+}
+
+.box-gral{
+    width: 100%;
+    padding: 20px 10px;
+    margin: auto;
+}
+
+.box-gral-gray{
+    @extend .box-gral;
+    background-color: gray;
+}
+
+.normalize{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+}
+
+// mixins (parecidos a las funciones)
+// son para automatizar codigo
+
+
+
+@mixin textos($size,$line-height,$color){
+    font-size: $size;
+    line-height: $line-height;
+    color: $color;
+    padding: 10px;
+    text-align: left;
+    @if $align == right {text-align: right;}
+    @if $align == left {text-align: left;}
+    @if $align == center {text-align: center;}
+}
+
+
+
+@mixin flex($direction,$justify,$align,$wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+@mixin directionRow(){//mixin que no lleva parametros
+    flex-direction: row;
+}
+
+
+
+
+// p{
+//     @include textos(1.1em,1.4em,black)
+// }
+
+.box{
+    @include flex(row, center, center, nowrap);
+}
+
+.box2{
+    @include flex(column, flex-end, flex-start, wrap);
+}
+
+
+
+// maps (son como arrays)
+
+
+$paleta:(
+    'uno': #1C1F26,
+    'dos':#8A99A6,
+    'tres':#D9BDAD,
+    'cuatro': #594242,
+    'cinco': #F2F2F2,
+);
+
+
+
+//condicionales
+
+.icon-lang{
+    width: 30px;
+    height: 55px;
+    background-size: contain;
+    background-position:center ;
+    @if $lang == es {background-image: url();}
+    @else if $lang == en {background-image: url();}
+    @else if $lang == fr {background-image: url();}
+    @else {background-image: url();} //si ninguno se cumple pone uno por defecto
+}
+
+
+// bucles
+
+
+@for $i from 1 through 6{//tiene una iteracion(repeticiones) de 6 veces usando variable i
+    .text-#{$i}{//concatena con el valor de $i
+        font-size: .25em *$i;
+    }
+}
+
+@each $icono in facebook, twitter, instagram{//crea clases para iconos y se las asigna
+    .#{$icono}-icon{
+        background-image: url();
+        width: 30px;
+        height: 30px;
+        background-size: 100%;
+        list-style: none;
+        margin-right: 6px;
+    }
+}
+
+//

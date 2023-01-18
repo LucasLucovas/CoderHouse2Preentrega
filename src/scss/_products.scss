@@ -1,23 +1,17 @@
-/* produts.html */
+@import "_mixins";
+@import "_vars";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 400;
-}
 
-/* Products navbar */
+
 
 .navbar{
-    font-size: 1.3em;
+    font-size: $navFontSize;
 }
 .nav-link{
     color: #ccbfbf;
-}
-.nav-link:hover{
-    color: #8A99A6;
+    &:hover{
+        color: #8A99A6;
+    }
 }
 
 .bg-brown{

@@ -1,19 +1,11 @@
-html{
-    height: 100vh;
-}
+@import "_mixins";
+@import "_vars";
+
+
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 400;
+    @extend .normalize;
 }
-
-body{
-    height: 100%;
-}
-
 
 /* 
 #1C1F26
