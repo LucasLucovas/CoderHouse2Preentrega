@@ -72,17 +72,6 @@
   margin-right: 6px;
 }
 
-.navbar {
-  font-size: 1.3em;
-}
-
-.nav-link {
-  color: #ccbfbf;
-}
-.nav-link:hover {
-  color: #8A99A6;
-}
-
 .bg-brown {
   background-color: #593E3C;
 }
@@ -117,24 +106,6 @@
 
 .footer a img {
   width: 34px;
-}
-
-.botonera {
-  display: flex;
-  justify-content: space-between;
-}
-.botonera ul {
-  list-style: none;
-}
-.botonera ul li {
-  margin-right: 10px;
-}
-.botonera ul li a {
-  font-size: 24px;
-  text-decoration: none;
-}
-.botonera ul li a:hover {
-  color: black;
 }
 
 .normalize, * {
@@ -412,6 +383,237 @@ body {
     height: 600px;
   }
 }
+.normalize, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.animations, .main__imagecontainer img:nth-child(1), .main__imagecontainer img:nth-child(2), .main__imagecontainer img:nth-child(3), .main__imagecontainer img:nth-child(4) {
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.icon-lang {
+  width: 30px;
+  height: 55px;
+  background-size: contain;
+  background-position: center;
+  background-image: url();
+}
+
+.text-1 {
+  font-size: 0.25em;
+}
+
+.text-2 {
+  font-size: 0.5em;
+}
+
+.text-3 {
+  font-size: 0.75em;
+}
+
+.text-4 {
+  font-size: 1em;
+}
+
+.text-5 {
+  font-size: 1.25em;
+}
+
+.text-6 {
+  font-size: 1.5em;
+}
+
+.facebook-icon {
+  background-image: url();
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
+.twitter-icon {
+  background-image: url();
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
+.instagram-icon {
+  background-image: url();
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
+.categories-main {
+  background-color: #8a99a6;
+}
+
+.categories-card img {
+  background-color: #af9a9a;
+}
+
+.categories-card div p {
+  text-align: center;
+}
+
+.normalize, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.animations, .main__imagecontainer img:nth-child(1), .main__imagecontainer img:nth-child(2), .main__imagecontainer img:nth-child(3), .main__imagecontainer img:nth-child(4) {
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.icon-lang {
+  width: 30px;
+  height: 55px;
+  background-size: contain;
+  background-position: center;
+  background-image: url();
+}
+
+.text-1 {
+  font-size: 0.25em;
+}
+
+.text-2 {
+  font-size: 0.5em;
+}
+
+.text-3 {
+  font-size: 0.75em;
+}
+
+.text-4 {
+  font-size: 1em;
+}
+
+.text-5 {
+  font-size: 1.25em;
+}
+
+.text-6 {
+  font-size: 1.5em;
+}
+
+.facebook-icon {
+  background-image: url();
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
+.twitter-icon {
+  background-image: url();
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
+.instagram-icon {
+  background-image: url();
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
+.normalize, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.animations, .main__imagecontainer img:nth-child(1), .main__imagecontainer img:nth-child(2), .main__imagecontainer img:nth-child(3), .main__imagecontainer img:nth-child(4) {
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.icon-lang {
+  width: 30px;
+  height: 55px;
+  background-size: contain;
+  background-position: center;
+  background-image: url();
+}
+
+.text-1 {
+  font-size: 0.25em;
+}
+
+.text-2 {
+  font-size: 0.5em;
+}
+
+.text-3 {
+  font-size: 0.75em;
+}
+
+.text-4 {
+  font-size: 1em;
+}
+
+.text-5 {
+  font-size: 1.25em;
+}
+
+.text-6 {
+  font-size: 1.5em;
+}
+
+.facebook-icon {
+  background-image: url();
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
+.twitter-icon {
+  background-image: url();
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
+.instagram-icon {
+  background-image: url();
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -11181,6 +11383,16 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.navbar {
+  font-size: 1.3em;
+}
+
+.nav-link {
+  color: #F2F2F2;
+}
+.nav-link:hover {
+  color: #8A99A6;
 }
 
 /*# sourceMappingURL=main.css.map */

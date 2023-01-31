@@ -1,14 +1,19 @@
-// imports
-// aca se importan los partial
 @import "_vars";
 @import "_products";
-@import "_nav";
 @import "_mixins";
 @import "_home";
+@import "_categories";
+@import "_hotsale";
+@import "_login";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-//Obligatorio usar SASS con partial, variables, extend, mixins, nesting
-//para la entrega
 
-//al instalar el paquete de bootstrap para tenerlo local
-//podes tocar las clases directamente con scss en node_modules
+.navbar{
+    font-size: $navFontSize;
+}
+.nav-link{
+    color: $cWhite;
+    &:hover{
+        color: #8A99A6;
+    }
+}

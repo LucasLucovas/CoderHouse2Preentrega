@@ -4,15 +4,7 @@
 
 
 
-.navbar{
-    font-size: $navFontSize;
-}
-.nav-link{
-    color: #ccbfbf;
-    &:hover{
-        color: #8A99A6;
-    }
-}
+
 
 .bg-brown{
     background-color: #593E3C;
@@ -27,7 +19,7 @@
 
 
 .mainproducts{
-    background-color: #8a99a6;
+    background-color: $pagesBgColor;
 }
 
 .bg-beige{

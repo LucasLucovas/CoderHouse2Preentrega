@@ -1,0 +1,15 @@
+@import "_mixins";
+@import "_vars";
+
+.categories-main{
+    background-color: $pagesBgColor;
+}
+
+.categories-card img{
+    background-color: #af9a9a;
+}
+
+.categories-card div p{
+   text-align: center;
+}
+
