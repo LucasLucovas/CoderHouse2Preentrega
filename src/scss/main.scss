@@ -8,6 +8,9 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 
+
+// Navbar
+
 .navbar{
     font-size: $navFontSize;
 }
@@ -16,4 +19,31 @@
     &:hover{
         color: #8A99A6;
     }
+}
+
+.navbar div a img{
+    width: 40px;
+}
+
+
+
+// buttons
+
+.btn-buy{
+    background-color: #8a786d;
+    color: #F2F2F2;
+}
+.btn-buy:hover{
+    background-color: #2b7085;
+    color: #00ff0d;
+}
+
+
+.btn-logIn{
+    background-color: #8a786d;
+    color: #F2F2F2;
+}
+.btn-logIn:hover{
+    background-color: #2b7085;
+    color: #F2F2F2;
 }

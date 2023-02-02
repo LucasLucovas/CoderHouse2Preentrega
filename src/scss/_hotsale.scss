@@ -1,2 +1,12 @@
 @import "_mixins";
 @import "_vars";
+
+
+
+.hotsaleBody{
+    background-color: $pagesBgColor;
+}
+
+.hotsaleHeader div img{
+    height: 500px;
+}

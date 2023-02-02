@@ -85,16 +85,6 @@
   background-color: #ccbfbf;
 }
 
-.btn-buy {
-  background-color: #8a786d;
-  color: #F2F2F2;
-}
-
-.btn-buy:hover {
-  background-color: #2b7085;
-  color: #00ff0d;
-}
-
 /* Products footer */
 .footer {
   color: #ccbfbf;
@@ -541,6 +531,14 @@ body {
   margin-right: 6px;
 }
 
+.hotsaleBody {
+  background-color: #8a99a6;
+}
+
+.hotsaleHeader div img {
+  height: 500px;
+}
+
 .normalize, * {
   margin: 0;
   padding: 0;
@@ -612,6 +610,10 @@ body {
   background-size: 100%;
   list-style: none;
   margin-right: 6px;
+}
+
+.loginMain {
+  background-color: #8a99a6;
 }
 
 /*!
@@ -11393,6 +11395,30 @@ textarea.form-control-lg {
 }
 .nav-link:hover {
   color: #8A99A6;
+}
+
+.navbar div a img {
+  width: 40px;
+}
+
+.btn-buy {
+  background-color: #8a786d;
+  color: #F2F2F2;
+}
+
+.btn-buy:hover {
+  background-color: #2b7085;
+  color: #00ff0d;
+}
+
+.btn-logIn {
+  background-color: #8a786d;
+  color: #F2F2F2;
+}
+
+.btn-logIn:hover {
+  background-color: #2b7085;
+  color: #F2F2F2;
 }
 
 /*# sourceMappingURL=main.css.map */
