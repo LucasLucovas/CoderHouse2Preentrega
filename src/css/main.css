@@ -260,10 +260,13 @@ body {
 }
 
 .main__textcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 5px solid rgba(255, 255, 255, 0.9);
   border-radius: 3px;
   width: 500px;
-  height: 500px;
   margin: 20px 40px;
   -webkit-box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
   -moz-box-shadow: 1px 1px 44px 5px rgba(240, 141, 124, 0.75);
@@ -275,7 +278,6 @@ body {
   color: #ffffff;
   text-align: left;
   margin-top: 30px;
-  margin-left: 20px;
 }
 
 .main__text {
@@ -535,8 +537,8 @@ body {
   background-color: #8a99a6;
 }
 
-.hotsaleHeader div img {
-  height: 500px;
+.carousel {
+  width: 700px;
 }
 
 .normalize, * {
