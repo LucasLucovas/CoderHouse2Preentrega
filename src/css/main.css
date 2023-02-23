@@ -79,6 +79,8 @@
 /* Products cards*/
 .mainproducts {
   background-color: #8a99a6;
+  width: 100%;
+  overflow: hidden;
 }
 
 .mainproducts .card {
@@ -11430,10 +11432,6 @@ textarea.form-control-lg {
 .btn-logIn:hover {
   background-color: #2b7085;
   color: #F2F2F2;
-}
-
-main {
-  width: 100% !important;
 }
 
 /*# sourceMappingURL=main.css.map */
