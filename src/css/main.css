@@ -548,6 +548,10 @@ body {
   background-color: #8a99a6;
 }
 
+.categories-card {
+  width: 18rem !important;
+}
+
 .carousel {
   width: 700px;
 }
