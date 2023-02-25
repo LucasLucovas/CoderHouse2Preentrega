@@ -5,3 +5,14 @@
 .loginMain{
     background-color: $pagesBgColor;
 }
+.lineBorder{
+    border: solid 4px #1d1414;
+}
+
+.loginForm div input{
+    background-color: #afa2a2;
+}
+.loginForm div input:focus{
+    border: 2px solid rgb(122, 98, 98);
+    box-shadow: none; background-color: #5a9b95;
+}
